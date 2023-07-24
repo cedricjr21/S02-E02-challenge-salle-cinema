@@ -63,6 +63,26 @@ require_once "template/header.php";
         <?php
     }
     ?>
+
+        <h2 class="page__title">Salle</h2>
+        <?php                   
+                    $rooms = [
+                    'Athéna', // => index 0
+                    'Dyonisos', // => index 1
+                    'Hadès', // => index 2
+                    'Zeus', // => index 3
+                    ];
+                    ?>      
+            <ul>
+                
+                    <?php foreach ($rooms as $room) {
+                    ?>
+                   <li> <?= $room ?> </li>
+                   <?php
+                    }
+                    ?>
+                </li>
+            </ul>
 </section>
 
 <?php
