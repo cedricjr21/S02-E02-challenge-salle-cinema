@@ -74,7 +74,32 @@ require_once "template/header.php";
                     ];
                     ?>      
             <ul>
-                
+            <?php
+        /*
+        $index = 0;
+        $nombreSalles = count($rooms);
+        while ($index < $nombreSalles) {
+            ?>
+            <li><?= $rooms[$index] ?></li>
+            <?php
+
+            ++$index;
+        }
+        */
+        ?>
+
+        <?php
+        /*
+        $nombreSalles = count($rooms);
+        for ($index = 0; $index < $nombreSalles; $index++) {
+            ?>
+            <li><?= $rooms[$index] ?></li>
+            <?php
+        }
+        */
+        ?>
+
+        
                     <?php foreach ($rooms as $room) {
                     ?>
                    <li> <?= $room ?> </li>
